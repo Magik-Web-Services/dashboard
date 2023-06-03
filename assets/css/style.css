@@ -1,0 +1,117 @@
+html {
+    font-size: 95%;
+}
+
+footer.sticky-footer {
+    padding: 2rem 0;
+    flex-shrink: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.ml-3 {
+    margin-bottom: 10rem;
+}
+
+.padding-right {
+    padding-right: 0 !important;
+}
+
+.radius-right0 {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.radius-left0 {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.height65 {
+    height: 65px;
+}
+
+.border0 {
+    border: none !important;
+    resize: none;
+    height: 100% !important;
+    background-color: #f8f9fc !important;
+}
+
+.borderl {
+    border: 1px solid #ebeaf2 !important;
+    border-left: 0 !important;
+}
+
+.borderb {
+    border: 1px solid #ebeaf2 !important;
+}
+
+.borderr {
+    border: 1px solid #ebeaf2 !important;
+    border-right: 0 !important;
+    width: 25%;
+}
+
+.Additem {
+    align-items: center;
+    background-color: #eeeeee;
+}
+
+.height38 {
+    height: 38px;
+}
+
+.tdsNone {
+    display: none !important;
+}
+
+.grid3row {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    margin-left: 0 !important;
+}
+.grid2row {
+    width: 300px !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+}
+
+.deleteIcon {
+    position: relative;
+}
+
+.deleteIcon i {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    cursor: pointer;
+}
+
+.select2-container {
+    width: 85% !important;
+}
+
+.select2-container--default .select2-selection--single{
+    height: 38px !important;
+    padding: 0.4rem 0.2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .select2-container {
+        width: 94% !important;
+    }
+    .width55 {
+        margin-bottom: 10px;
+        width: 55% !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .width55 {
+        margin-bottom: 10px;
+        width: 90% !important;
+    }
+}
