@@ -1,6 +1,6 @@
 <?php
 include(dirname(__FILE__)."/../dbconnect.php");
-$sql2 = "select * from database_customers";
+$sql2 = "select * from dashboard_customers";
 $result = mysqli_query($conn,$sql2);
 
 while ($row = $result->fetch_assoc()) {

@@ -19,11 +19,11 @@
                         <a href="Create/items.php" class="ember-view btn-group"><button class="btn btn-primary" id="ad10255b5">New</button>
                         </a>
                     </div>
-
+                    <form action="../database/delete/mdelete.php" method="POST">
                     <table border="1" class="mt-5 table" id="myTable">
                         <thead>
                             <tr>
-                                <th></th>
+                                <th>#</th>
                                 <th>NAME</th>
                                 <th>DESCRIPTION</th>
                                 <th>RATE</th>
@@ -32,11 +32,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <?php
+                            <?php
                             include('../database/All/allitemsdb.php')
                             ?>
                         </tbody>
+                        <tfoot>
+                            <button type="submit" name="mDeleteIT" class="btn btn-danger mb-3">Delete</button>
+                        </tfoot>
                     </table>
+                    </form>
                 </div>
             </div>
             <?php include('../common/footer.php'); ?>

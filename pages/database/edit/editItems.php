@@ -8,7 +8,7 @@ if (isset($_POST['editItem'])) {
     $esellingPrice = $_POST['esellingPrice'];
     $eDescription = $_POST['eDescription'];
 
-    $editSql = "UPDATE `database_items` SET `productType`='$eproductType',`Name`='$eName',`unit`=' $eunit',`sellingPrice`='$esellingPrice',`Description`='$eDescription'   WHERE `itemId` = $sno";
+    $editSql = "UPDATE `dashboard_items` SET `productType`='$eproductType',`Name`='$eName',`unit`=' $eunit',`sellingPrice`='$esellingPrice',`Description`='$eDescription'   WHERE `itemId` = $sno";
 
     $editServer = mysqli_query($conn, $editSql);
 

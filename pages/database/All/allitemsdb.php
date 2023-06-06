@@ -1,12 +1,12 @@
 <?php
 include(dirname(__FILE__) . "/../dbconnect.php");
-$sql2 = "select * from database_items";
+$sql2 = "select * from dashboard_items";
 $result = $conn->query($sql2);
 
 while ($row = $result->fetch_assoc()) {
     echo "
             <tr>
-                <td></td>
+            <td><input type='checkbox' name='mdeleteIdIT[]' value='" .  $row["itemId"] . "'></td>
                 <td>" . $row["Name"] . "</td>
                 <td>" . $row["Description"] . "</td>
                 <td> ₹" . $row["sellingPrice"] . ".00</td>

@@ -117,19 +117,19 @@ $(document).ready(function () {
     })
 
     // MultiCustomerdeletes
-    $('#Customer_Delete').click(function () {
-        let rowdata = table.rows('.selected').data();
-        // console.log(rowdata[0][1])
-        // window.location = `../../pages/database/delete/delete.php?MultiCustomerdeletes=${rowdata}`;
+    // $('#Customer_Delete').click(function () {
+    //     let rowdata = table.rows('.selected').data();
+    //     // console.log(rowdata[0][1])
+    //     // window.location = `../../pages/database/delete/delete.php?MultiCustomerdeletes=${rowdata}`;
 
-        // let msg = '';
-        for (let i = 0; i < rowdata.length; i++) {
-            let sno = rowdata[i][1]
-            // msg += rowdata[i]
-            window.location = `../../pages/database/delete/delete.php?mCustomerdeletes=${rowdata}`;
-        }
-        // alert(msg);
-    });
+    //     // let msg = '';
+    //     for (let i = 0; i < rowdata.length; i++) {
+    //         let sno = rowdata[i][1]
+    //         // msg += rowdata[i]
+    //         window.location = `../../pages/database/delete/delete.php?mCustomerdeletes=${rowdata}`;
+    //     }
+    //     // alert(msg);
+    // });
 
     // Customersedit
     let Customersedit = jQuery('.Customersedit');

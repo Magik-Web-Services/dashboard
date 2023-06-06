@@ -3,7 +3,7 @@ include_once("../dbconnect.php");
 
 if (isset($_GET['Customersedit'])) {
     $sno = $_GET['Customersedit'];
-    $sqlQuery = "SELECT * FROM `database_customers` WHERE customers_id = {$sno}";
+    $sqlQuery = "SELECT * FROM `dashboard_customers` WHERE customers_id = {$sno}";
     $result = mysqli_query($conn, $sqlQuery);
 
     $row = $result->fetch_assoc();

@@ -7,7 +7,7 @@ $login = false;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userName = $_POST["username"];
     $password = $_POST["password"];
-    $sql = "Select * from `database_accounts` where userName='$userName'";
+    $sql = "Select * from `dashboard_accounts` where userName='$userName'";
     $result = mysqli_query($conn, $sql);
     $num = mysqli_num_rows($result);
     if ($num == 1) {

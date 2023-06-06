@@ -1,4 +1,5 @@
 <?php include('../../common/head.php'); ?>
+<?php include('../../database/dbconnect.php'); ?>
 
 <body id="page-top">
     <!-- Page Wrapper -->
@@ -41,17 +42,26 @@
 
                                                         <!-- <input type="text" class="form-control border-0 small searchCustomer"> -->
                                                         <!--  -->
-                                                        <select class="form-control searchCustomer">
-                                                            <!-- <option value="one">First</option>
+                                                        <select class="form-select form-control" aria-label="Default select example">
+                                                            <option disabled>select customer</option>
+                                                            <?php
+                                                            $sql = "SELECT * FROM `dashboard_customers`";
+                                                            $result = mysqli_query($conn, $sql);
+                                                            while ($row = mysqli_fetch_assoc($result)) {
+                                                            ?>
+                                                                <option value="<?php echo $row["fName"];
+                                                                                echo "&nbsp;";
+                                                                                echo $row["lName"]; ?>"><?php echo $row["fName"];
+                                                                                    echo "&nbsp;";
+                                                                                    echo $row["lName"]; ?></option>
+                                                            <?php } ?>
+                                                        </select>
+                                                        <!-- <select class="form-control searchCustomer"> -->
+                                                        <!-- <option value="one">First</option>
                                                             <option value="two" disabled="disabled">Second (disabled)</option>
                                                             <option value="three">Third</option> -->
-                                                        </select>
+                                                        <!-- </select> -->
                                                         <!--  -->
-                                                        <div class="input-group-append">
-                                                            <button class="height38 btn btn-primary" type="button">
-                                                                <i class="fas fa-search fa-sm"></i>
-                                                            </button>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

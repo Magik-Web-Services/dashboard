@@ -15,7 +15,7 @@ $Designation = $_POST['Designation'];
 $Department = $_POST['Department'];
 $Website = $_POST['Website'];
 
-$sql = "INSERT INTO `database_customers` (`customerType`, `salutation`, `fName`, `lName`, `companyName`, `customerDisplayName`, `customerEmail`, `workPhone`, `mobile`, `Skype`, `Designation`, `Department`, `website`) VALUES ('$customerType', '$salutation', '$Fname', '$Lname', '$Company_Name', '$customerDisplayName', '$customerEmail', '$workPhone', '$Mobile', '$Skype', '$Designation', '$Department', '$Website');";
+$sql = "INSERT INTO `dashboard_customers` (`customerType`, `salutation`, `fName`, `lName`, `companyName`, `customerDisplayName`, `customerEmail`, `workPhone`, `mobile`, `Skype`, `Designation`, `Department`, `website`) VALUES ('$customerType', '$salutation', '$Fname', '$Lname', '$Company_Name', '$customerDisplayName', '$customerEmail', '$workPhone', '$Mobile', '$Skype', '$Designation', '$Department', '$Website');";
 
 $form = mysqli_query($conn, $sql);
 
